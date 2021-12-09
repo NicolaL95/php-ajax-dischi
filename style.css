@@ -1,0 +1,7 @@
+#header_container {
+  background-color: #2e3a46;
+  padding: 10px 20px;
+}
+ #header_container > img {
+    width: 50px;
+  }
