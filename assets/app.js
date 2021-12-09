@@ -4,7 +4,6 @@ const app = new Vue({
         songs: null,
         genreSongs: [],
         selGen: 'all',
-        fisong: []
     },
     mounted() {
         axios
@@ -26,14 +25,13 @@ const app = new Vue({
             axios
                 .get('./songs.php')
                 .then(response => {
-                    console.log(response);
                     this.songs = response.data
-                    this.fisong.filter(function (item) {
-                        console.log(item.genre, this.selGen)
-                        return item.genre == this.selGen
-
-                    });
-                    console.log(this.fisong)
+                    if (this.selGen != 'all') {
+                        this.songs = this.songs.filter(function (item) {
+                            console.log(app.selGen)
+                            return item.genre == app.selGen
+                        });
+                    }
                 })
         }
     }
