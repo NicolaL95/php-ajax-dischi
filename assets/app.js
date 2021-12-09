@@ -5,7 +5,7 @@ const app = new Vue({
     },
     mounted() {
         axios
-            .get('../songs.php')
+            .get('./songs.php')
             .then(response => {
                 console.log(response);
                 this.songs = response.data
