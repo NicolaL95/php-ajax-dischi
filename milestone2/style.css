@@ -1,0 +1,45 @@
+/* HEADER */
+#header_container {
+  background-color: #2e3a46;
+  padding: 10px 20px;
+}
+ #header_container > img {
+    width: 50px;
+  }
+  /* MAIN */
+  #main_container{
+    background-color: #1E2D3B;
+    height: calc(100vh - 70px);
+  }
+.row_song{
+      gap: 15px;
+    padding-top: 100px;
+}
+  .song_container{
+    width: 200px;
+     background-color: #2e3a46;
+     align-items: center;
+     padding: 20px;
+     height: 390px;
+  }
+    .song_container > img{
+      width: 160px;
+    height: 160px;
+   }
+  .song_container > h3{
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+   }
+   .song_container > p{
+    color: #575C63
+   }
+   .p_author{
+     margin-bottom: 0;
+   }
+   .p_year{
+     margin: 0;
+   }
+  
