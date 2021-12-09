@@ -23,6 +23,18 @@ const app = new Vue({
     },
     methods: {
         filterGenre() {
+            axios
+                .get('./songs.php')
+                .then(response => {
+                    console.log(response);
+                    this.songs = response.data
+                    this.fisong.filter(function (item) {
+                        console.log(item.genre, this.selGen)
+                        return item.genre == this.selGen
+
+                    });
+                    console.log(this.fisong)
+                })
         }
     }
 })
