@@ -1,7 +1,13 @@
+/* HEADER */
 #header_container {
   background-color: #2e3a46;
   padding: 10px 20px;
 }
  #header_container > img {
     width: 50px;
+  }
+  /* MAIN */
+  #main_container{
+    background-color: #1E2D3B;
+    height: calc(100vh - 70px);
   }
